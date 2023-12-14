@@ -1,0 +1,67 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input{
+  @apply bg-transparent
+}
+
+.signin_active {
+  @apply text-white-lite bg-theme-primary hover:bg-theme-secondary transition-colors duration-300;
+}
+
+.errorInput {
+  @apply border-2 border-red-400 m-0;
+}
+
+.error {
+  @apply text-xs ml-2 text-red-500 mt-[2px];
+}
+
+@media (min-width: 1200px) {
+  .navbar {
+    @apply relative w-fit left-0 top-0 h-full items-center justify-center px-8 bg-transparent;
+  }
+  .navbar ul {
+    @apply flex-row w-full h-full items-center justify-center gap-12;
+  }
+  .navbar i {
+    @apply block mr-0 text-center;
+  }
+}
+
+.container {
+  @apply m-auto px-4 max-w-md sm:max-w-lg md:max-w-xl lg:max-w-5xl xl:max-w-6xl gap-6;
+}
+
+.control-active {
+  @apply text-theme-primary;
+}
+
+.images_tab__image:hover .hover_effect_to_image {
+  height: 100%;
+}
+
+.button{
+  @apply py-2 px-7 bg-theme-primary hover:bg-theme-secondary transition-colors duration-150 rounded-sm text-white-pure
+}
+
+.s-button{
+  @apply py-2 px-7 border border-theme-secondary text-theme-secondary bg-transparent hover:bg-theme-secondary hover:text-white-pure transition-colors duration-150 rounded-sm
+}
+
+/* @media */
+
+
+a, button, input {
+  text-decoration: none;
+  outline: none;
+}
+
+#cover-image-container:hover #cover-image-icon{
+  opacity: 1;
+}
+#profile-image-container:hover #profile-image-icon{
+  opacity: 1;
+}
